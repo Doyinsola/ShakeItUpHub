@@ -29,7 +29,7 @@ footer {
   color: #FFFFFF;
   font-size: 0.75rem;
   height: 2rem;
-  position: static;
+  position: fixed;
   bottom: 0;
   width: 100%;
   display: flex;
@@ -198,6 +198,9 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.drinks__CTA {
+  padding-bottom: 1rem;
+}
 .drinks__instr {
   padding-bottom: 1rem;
 }
@@ -215,6 +218,9 @@ footer {
   font-style: normal;
   padding: 0.5rem 0 1em;
 }
+.drinks__recipe {
+  width: 100%;
+}
 .drinks__name {
   display: flex;
   justify-content: center;
@@ -222,25 +228,44 @@ footer {
 }
 .drinks__img {
   width: 100%;
-  margin: 1rem 0;
+  margin-top: 1rem;
   border-radius: 5px;
 }
 .drinks__status {
   padding-bottom: 1rem;
 }
 @media (min-width: 500px) {
+  .drinks {
+    padding: 0 5rem;
+  }
   .drinks__img {
     width: 80%;
   }
 }
 @media (min-width: 769px) and (max-width: 1279px) {
+  .drinks {
+    padding: 0 5rem;
+  }
   .drinks__img {
     width: 60%;
   }
+  .drinks__recipe {
+    width: 100%;
+    padding: 0 2rem;
+  }
+  .drinks__CTA {
+    padding-bottom: 2rem;
+  }
 }
 @media (min-width: 1280px) {
+  .drinks {
+    padding: 0 12rem;
+  }
   .drinks__img {
     width: 50%;
+  }
+  .drinks__CTA {
+    padding-bottom: 2rem;
   }
 }
 

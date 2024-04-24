@@ -27,10 +27,11 @@ function displayDrink(){
 
     const ctaEL = document.createElement('p');
     ctaEL.classList.add('drinks__CTA');
-    ctaEL.innerText="Click to view recipe";
+    ctaEL.innerText="Click image to view recipe";
     drinksSection.append(ctaEL);
 
-    drinkImg.addEventListener('click',()=>{
+    drinkImg.addEventListener('click',(event)=>{
+        event.preventDefault();
         displayRecipe();
     });
 }
@@ -42,7 +43,6 @@ buttonEL.addEventListener("click",()=>{
 });
 
 function displayRecipe(){
-
     const drinkStatus = document.createElement('p');
     drinkStatus.classList.add('drinks__status');
     drinkStatus.innerText=`This drink is ${drink.
