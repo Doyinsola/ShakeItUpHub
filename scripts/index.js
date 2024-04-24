@@ -31,7 +31,7 @@ function displayDrink(){
     });
 }
 
-const buttonEL = document.querySelector('.generate__button');
+const buttonEL = document.querySelector('.generator__button');
 buttonEL.addEventListener("click",()=>{
     displayDrink();
     getDrinks();

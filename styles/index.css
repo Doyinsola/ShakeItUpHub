@@ -18,7 +18,8 @@ h2 {
 }
 
 main {
-  margin: 1rem 3rem 1rem;
+  margin: 1rem 3rem 0rem;
+  padding-bottom: 3rem;
 }
 
 footer {
@@ -26,7 +27,7 @@ footer {
   color: #FFFFFF;
   font-size: 0.75rem;
   height: 2rem;
-  position: absolute;
+  position: static;
   bottom: 0;
   width: 100%;
   display: flex;
@@ -186,4 +187,35 @@ footer {
 }
 .generator__subtext {
   padding-top: 2rem;
+}
+
+.drinks {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.drinks__name {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+.drinks__img {
+  width: 100%;
+  margin: 1rem 0;
+  border-radius: 5px;
+}
+.drinks__status {
+  padding-bottom: 1rem;
+}
+@media (min-width: 500px) {
+  .drinks__img {
+    width: 80%;
+  }
+}
+@media (min-width: 769px) and (max-width: 1279px) {
+  .drinks__img {
+    width: 60%;
+  }
 }/*# sourceMappingURL=index.css.map */
