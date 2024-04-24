@@ -1,0 +1,20 @@
+  @mixin mullish-font {
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@mixin mullish-font-demi {
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+@mixin mullish-font-bold {
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style:normal;
+}
