@@ -45,22 +45,42 @@ function displayRecipe(){
     strAlcoholic}`;
     drinksSection.append(drinkStatus);
 
+    const drinkInstrTitle = document.createElement('p');
+    drinkInstrTitle.classList.add('drinks__instr-title');
+    drinkInstrTitle.innerText="Serving Instructions:";
+    drinksSection.append(drinkInstrTitle);
+
+    
     const drinkInstructions = document.createElement('p');
     drinkInstructions.classList.add('drinks__instr');
-    drinkInstructions.innerText=`Serving Instructions: ${drink.strInstructions}`;
+    drinkInstructions.innerText=`${drink.strInstructions}`;
     drinksSection.append(drinkInstructions);
+    
+    const recipeTitleEL = document.createElement('p');
+    recipeTitleEL.classList.add('drink__recipe-title');
+    recipeTitleEL.innerText="How to Prepare:"
+    drinksSection.append(recipeTitleEL);
 
-   const ingredients = _.pick(drink, "strIngredient1","strIngredient2","strIngredient3","strIngredient4","strIngredient5","strIngredient6","strIngredient7","strIngredient8","strIngredient9","strIngredient10","strIngredient11","strIngredient12","strIngredient13","strIngredient14","strIngredient15");
+    const recipeEL = document.createElement('p');
+    recipeEL.classList.add('drink__recipe');
+    drinksSection.append(recipeEL);
+    
+    const ingredients = _.pick(drink, "strIngredient1","strIngredient2","strIngredient3","strIngredient4","strIngredient5","strIngredient6","strIngredient7","strIngredient8","strIngredient9","strIngredient10","strIngredient11","strIngredient12","strIngredient13","strIngredient14","strIngredient15");
   
     const ingredientList=Object.values(ingredients)
     const newIngredients=ingredientList.filter((ingredient)=>(ingredient!==null));
    console.log(newIngredients);
-
+   
    const measures = _.pick(drink, "strMeasure1","strMeasure2","strMeasure3","strMeasure4","strMeasure5","strMeasure6","strMeasure7","strMeasure8","strMeasure9","strMeasure10","strMeasure11","strMeasure12","strMeasure13","strMeasure14","strMeasure15");
   
    const measureList=Object.values(measures)
-   const newMeasures=measureList.filter((measure)=>(measure!==null));
+   const newMeasures=measureList.filter((measure)=>measure!=null||measure==='');
   console.log(newMeasures);
-
-
+  let recipe = "";
+newIngredients.forEach((ingr,i)=> {
+    const meas = newMeasures[i];
+    console.log(ingr+" "+meas);
+    recipe += ingr+" "+meas+"\n";
+})
+recipeEL.innerText = recipe;
 }
