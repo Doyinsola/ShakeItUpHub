@@ -224,7 +224,7 @@ footer {
 .drinks__name {
   display: flex;
   justify-content: center;
-  padding-bottom: 1rem;
+  padding: 1.5rem 0 1rem;
 }
 .drinks__img {
   width: 100%;
