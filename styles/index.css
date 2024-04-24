@@ -198,6 +198,22 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.drinks__instr {
+  padding-bottom: 1rem;
+}
+.drinks__instr-title {
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  padding-bottom: 1rem;
+}
+.drinks__recipe-title {
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
 .drinks__name {
   display: flex;
   justify-content: center;
@@ -220,4 +236,17 @@ footer {
   .drinks__img {
     width: 60%;
   }
+}
+@media (min-width: 1280px) {
+  .drinks__img {
+    width: 50%;
+  }
+}
+
+.drink__recipe-title {
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  padding: 0.5rem 0 1em;
 }/*# sourceMappingURL=index.css.map */

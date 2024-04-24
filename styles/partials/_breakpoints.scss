@@ -26,7 +26,6 @@ $breakpoint-desktop: 1280px;    // Desktop starts at 1280px
 @mixin tablet-2 {
     @media (min-width: (1060px))  {
         @content;
-
     }
 }
 
