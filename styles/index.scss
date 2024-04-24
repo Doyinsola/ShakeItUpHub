@@ -1,0 +1,158 @@
+@use './partials/colours' as *;
+@use './partials/globals' as *;
+@use './partials/breakpoints' as *;
+@use './partials/mixins' as *;
+
+.top-nav {
+    background-color: $primary-black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 6rem;
+    padding: 0 1rem;
+    font-weight: bold;
+    color: rgb(241, 242, 247);
+
+
+    &__wordmark {
+        padding: 1rem 0;
+    }
+
+    @include tablet {
+        height: 3rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        &__wordmark {
+            padding: 0;
+        }
+    }
+
+    @include desktop {
+        height: 3rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        &__wordmark {
+            padding: 0;
+        }
+    }
+}
+
+.banner {
+    background-color: $primary-pink;
+    height: 9rem;
+    display: flex;
+    justify-content: center;
+    color: $secondary-pinkblack;
+
+    &__title {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            padding: 0 2rem;
+    }
+
+    @include tablet {
+        display: flex;
+        justify-content: center;
+
+        &__title {
+            width: auto;
+        }
+    }
+
+    @include desktop {
+        display: flex;
+        justify-content: center;
+
+        &__title {
+            width: auto;
+        }
+    }
+}
+
+.content {
+
+    &__intro {
+        padding-bottom: 1rem;
+    }
+
+    &__title {
+        padding-top: 1rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    @include tablet {
+        padding: 0.5rem 3rem;
+
+        &__title {
+            padding-top: 0;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        &__intro {
+            padding-bottom: 1rem;
+        }
+    }
+
+    @include desktop {
+        padding: 0.5rem 12rem;
+
+        &__title {
+            display: flex;
+            justify-content: flex-start;
+        }
+    }
+
+
+}
+
+.generator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__subtext {
+        padding: 1rem 0 0;
+        margin-bottom: 1rem;
+    }
+
+    &__button {
+        @include mullish-font-bold;
+        padding: 0.75rem 1.5rem;
+        font-size: 1.15rem;
+        border-radius: 9px;
+        background-color: $primary-pink;
+        width: 12rem;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    @include tablet {
+        align-items: flex-start;
+
+        &__subtext {
+            padding-top: 1.5rem;
+        }
+    }
+
+    @include desktop {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    &__subtext {
+        padding-top: 2rem;
+    }
+
+}

@@ -7,15 +7,44 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="./scripts/drinks-api.js" defer></script>
     <script src="./scripts/index.js" defer></script>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header></header>
+    <header class="top-nav">
+      <div class="top-nav__wordmark">
+        <h3>ShakeItUpHub</h3>
+      </div>
+      <div class="tagline">
+        The mixology experts
+      </div>
+    </header>
+    <section class="banner">
+      <h2 class="banner__title">Add some flavour to your life..</h2>
+    </section>
     <main class="main">
-      <h1 class="title">Welcome to the Shake It Up Hub</h1>
-      <button class="generate__button">Party Time</button>
-      <p>click button above to generate a random drink</p>
-      <section class="drinks"></section>
+      <section class="content">
+        <h1 class="content__title">Your next cocktail</h1>
+        <div class="content__intro">
+          Is it the same old drink to every gathering and celebration?   
+          When was the last time you tried something new?  More specifically, a new drink?
+        </div>
+      <div class="generator">
+        <div class="content__paragraph">
+            Enjoy a new drink at your next event, celebration or just enjoying the weather on the patio.
+        </div>
+        <p class="generator__subtext">
+          Click on the button above to generate a random drink to enjoy during your next event
+        </p>
+        <button class="generator__button">PARTY TIME</button>
+      </div>
+      <section class="drinks">
+      </section>
     </main>
-    <footer></footer>
+    <footer>
+      Copyright @2024
+    </footer>
   </body>
 </html>
