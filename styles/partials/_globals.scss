@@ -14,8 +14,7 @@ body {
     display: flex;
     flex-direction: column;
     //position: relative;
-    //min-height: 100vh;
-    flex-grow: 1;
+    //height: 100vh;
 }
 
 h2 {
@@ -24,7 +23,8 @@ h2 {
 }
 
 main {
-    margin: 1rem 3rem 1rem;
+    margin: 1rem 3rem 0rem;
+    padding-bottom: 3rem;
 }
 
 footer {
@@ -32,7 +32,7 @@ footer {
     color: $secondary-white;
     font-size: 0.75rem;
     height: 2rem;
-    position: absolute;
+    position: static;
     bottom: 0;
     width: 100%;
     display: flex;
