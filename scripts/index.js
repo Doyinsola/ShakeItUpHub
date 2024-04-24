@@ -80,7 +80,7 @@ function displayRecipe(){
 newIngredients.forEach((ingr,i)=> {
     const meas = newMeasures[i];
     console.log(ingr+" "+meas);
-    recipe += ingr+" "+meas;
+    recipe += ingr+" "+meas+"\n";
 })
 recipeEL.innerText = recipe;
 }
